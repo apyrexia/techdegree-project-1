@@ -1,4 +1,4 @@
-// An array of objects containing 12 quotations
+// An array of objects containing quotations
 let quotes = [
   {
     quote: `To be whole is to be part; true voyage is return.`,
@@ -50,21 +50,17 @@ let quotes = [
   {
     quote: `You must do the thing you think you cannot do.`,
     source: `Eleanor Roosevelt`,
-    citation: ``,
+    citation: ` `,
     year: `1960`
   },
   {
     quote: `To do what you are afraid to do is to guide your life by fear. How much better not to be afraid to do what you believe in doing!`,
     source: `Jane Addams`,
-    citation: ``,
+    citation: ` `,
     year: `circa 1881`
   },
   {
-    quote: `Glance at the sun.
-    See the moon and the stars.
-    Gaze at the beauty of the earth's greenings.
-    Now,
-    Think.`,
+    quote: `Glance at the sun. See the moon and the stars. Gaze at the beauty of the earth's greenings. Now, Think.`,
     source: `Hildegard of Bingen`,
     citation: `tr. Gabriele Uhlein, Meditations with Hildegard of Bingen (1983)`,
     year: `circa 1179`
@@ -74,5 +70,5 @@ let quotes = [
     source: `John Kenneth Galbraith`,
     citation: `quoted in New York Times Magazine`,
     year: `1960`
-  },
+  }
 ];
