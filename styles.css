@@ -23,15 +23,25 @@
   margin: 20px;
 }
 #button {
-  border-style: solid;
-  border-width: 2px;
-  font-size: 1.5em;
+  font-size: 1em;
   padding: 1%;
   position: absolute;
   top: 75%;
-  left: 50%;
+  left: 80%;
   transform: translate(-50%, -50%);
   text-align: center;
   margin: 25px;
 }
 
+.button {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-style: inherit;
+  color: black;
+  text-decoration: none;;
+  padding: 9px;
+  border: solid 1px;
+  
+  border-width: 1px;
+}
