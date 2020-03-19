@@ -8,7 +8,17 @@
   
 }
 
-.citation-year {
+.citation {
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+.series {
+  /* font-style: italic; */
+  font-size: 1.5em;
+}
+
+.year {
   font-style: italic;
   font-size: 1.5em;
 }

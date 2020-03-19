@@ -8,9 +8,20 @@ function randomNumber(min, max) {
 // Code to randomly select a quote from the quotes array and return it in HTML.
 function getRandomQuote() {
   selection = randomNumber(0, quotes.length - 1);
-  let message = `<p class = "quote">${quotes[selection].quote}</p> 
-  <p class = "source">-${quotes[selection].source}</p> 
-  <p class = "citation-year">${quotes[selection].citation} ${quotes[selection].year}</p>`;
+  let message = `<p class = "quote">${quotes[selection].quote}</p>`;
+  if (quotes[selection].source) {
+    message += `<p class = "source">-${quotes[selection].source}</p>`;
+  } 
+  if (quotes[selection].citation) {
+    message += `<p class = "citation">${quotes[selection].citation}</p>`;
+  }
+  if (quotes[selection].series) {
+    message += `<p class = "series">${quotes[selection].series}</p>`
+  }
+  if (quotes[selection].year) {
+    message += `<p class = "year">${quotes[selection].year}</p>`;
+  }
+  
   return message;
 }
 

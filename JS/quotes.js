@@ -28,36 +28,36 @@ let quotes = [
     quote: `It is a strange fate that we should suffer so much fear and doubt over so small a thing… such a little thing.`,
     source: `Boromir`,
     citation: `The Fellowship of the Ring by J.R.R. Tolkien`,
+    series: `Book One of The Lord of the Rings`,
     year: `1954`
   },
   {
     quote: `The world is indeed full of peril, and in it there are many dark places; but still there is much that is fair, and though in all lands love is now mingled with grief, it grows perhaps the greater.`,
     source: `Haraldir`,
     citation: `The Fellowship of the Ring by J.R.R. Tolkien`,
+    series: `Book One of The Lord of the Rings`,
     year: `1954`
   },
   {
     quote: `Time does not tarry ever, but change and growth is not in all things and places alike. For the Elves the world moves, and it moves both very swift and very slow. Swift, because they themselves change little, and all else fleets by: it is a grief to them. Slow, because they do not count the running years, not for themselves. Yet beneath the Sun all things must wear to an end at last.`,
     source: `Legolas`,
     citation: `The Fellowship of the Ring by J.R.R. Tolkien`,
+    series: `Book One of The Lord of the Rings`,
     year: `1954`
   },
   {
     quote: `Every lie we tell incurs a debt to the truth, sooner or later that debt is paid.`,
     source: `Valery Legasov`,
-    citation: `From the HBO Serial "Chernobyl"`,
-    year: ` `
+    citation: `From the HBO Serial "Chernobyl"`
   },
   {
     quote: `You must do the thing you think you cannot do.`,
     source: `Eleanor Roosevelt`,
-    citation: ` `,
     year: `1960`
   },
   {
     quote: `To do what you are afraid to do is to guide your life by fear. How much better not to be afraid to do what you believe in doing!`,
     source: `Jane Addams`,
-    citation: ``,
     year: `circa 1881`
   },
   {
