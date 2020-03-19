@@ -12,12 +12,13 @@ let quotes = [
     citation: `The Dispossessed by Ursula K. Le Guin`,
     year: `1974`
   },
-  {
-    quote: `It is a disgrace to grow old through sheer carelessness before seeing what manner of man you may become by developing your bodily strength and beauty to their highest limit. But you cannot see that, if you are careless; for it will not come of its own accord.`,
-    source: `Socrates as quoted by Xenophon`,
-    citation: `Memorabilia`,
-    year: `circa 371 BC`
-  },
+  // Removing for now, might be seen as controversial or negative.
+  // {
+  //   quote: `It is a disgrace to grow old through sheer carelessness before seeing what manner of man you may become by developing your bodily strength and beauty to their highest limit. But you cannot see that, if you are careless; for it will not come of its own accord.`,
+  //   source: `Socrates as quoted by Xenophon`,
+  //   citation: `Memorabilia`,
+  //   year: `circa 371 BC`
+  // },
   {
     quote: `Wonder is the feeling of a philosopher, and philosophy begins in wonder.`,
     source: `Socrates as quoted by Plato`,
