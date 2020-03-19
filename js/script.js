@@ -86,6 +86,8 @@ let colors = [
 
 /***
  * `randomNumber` function
+ * Random number generator inclusive at max and min source: 
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 ***/ 
 
 function randomNumber(min, max) {
@@ -128,6 +130,8 @@ printQuote();
 
 /***
  * `randomBackgroundColor` function
+ * "document.body.style.background" 
+ * source:https://www.w3resource.com/javascript-exercises/javascript-math-exercise-40.php
 ***/
 function randomBackgroundColor() {
   document.body.style.background = colors[randomNumber(1, colors.length - 1)];
