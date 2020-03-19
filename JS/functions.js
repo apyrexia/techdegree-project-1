@@ -14,7 +14,7 @@ function getRandomQuote() {
   return message;
 }
 
-// Code to print to the page
+// Code to print argument to the quote box
 function printQuote(p) {
   document.getElementById('quote-box').innerHTML = p
 }

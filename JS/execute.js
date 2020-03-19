@@ -1,0 +1,2 @@
+randomBackground()
+printQuote(getRandomQuote());
