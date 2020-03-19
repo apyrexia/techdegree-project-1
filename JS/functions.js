@@ -19,7 +19,7 @@ function printQuote(p) {
   document.getElementById('quote-box').innerHTML = p
 }
 
-// Code to select a random background color from the colors array. "document.body.style.background" source:https://www.w3resource.com/javascript-exercises/javascript-math-exercise-40.php
+// Code to select a random background color from the colors.js array. "document.body.style.background" source:https://www.w3resource.com/javascript-exercises/javascript-math-exercise-40.php
 function randomBackground() {
 document.body.style.background = colors[randomNumber(1, colors.length - 1)];
 }
