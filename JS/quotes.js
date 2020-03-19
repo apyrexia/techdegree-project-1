@@ -1,3 +1,4 @@
+// An array of objects containing 12 quotations
 let quotes = [
   {
     quote: `To be whole is to be part; true voyage is return.`,
