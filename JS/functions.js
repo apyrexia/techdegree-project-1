@@ -10,8 +10,8 @@ function getRandomQuote() {
   selection = randomNumber(0, quotes.length - 1);
   console.log(selection);
   let message = `<p class = "quote">${quotes[selection].quote}</p> 
-  <p class = "source">-${quotes[selection].source},</p> 
-  <p class = "citation-year">${quotes[selection].citation}, ${quotes[selection].year}</p>`;
+  <p class = "source">-${quotes[selection].source}</p> 
+  <p class = "citation-year">${quotes[selection].citation} ${quotes[selection].year}</p>`;
   return message;
 }
 

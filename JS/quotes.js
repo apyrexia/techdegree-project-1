@@ -46,6 +46,7 @@ let quotes = [
     quote: `Every lie we tell incurs a debt to the truth, sooner or later that debt is paid.`,
     source: `Valery Legasov`,
     citation: `From the HBO Serial "Chernobyl"`,
+    year: ` `
   },
   {
     quote: `You must do the thing you think you cannot do.`,
@@ -56,11 +57,15 @@ let quotes = [
   {
     quote: `To do what you are afraid to do is to guide your life by fear. How much better not to be afraid to do what you believe in doing!`,
     source: `Jane Addams`,
-    citation: ` `,
+    citation: ``,
     year: `circa 1881`
   },
   {
-    quote: `Glance at the sun. See the moon and the stars. Gaze at the beauty of the earth's greenings. Now, Think.`,
+    quote: `<p>Glance at the sun.</p>
+    <p>See the moon and the stars.</p>
+    <p>Gaze at the beauty of the earth's greenings.</p>
+    <p>Now,</p>
+    <p>Think.</p>`,
     source: `Hildegard of Bingen`,
     citation: `tr. Gabriele Uhlein, Meditations with Hildegard of Bingen (1983)`,
     year: `circa 1179`
