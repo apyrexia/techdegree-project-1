@@ -8,12 +8,12 @@ function randomNumber(min, max) {
 // Code to randomly select a quote from the quotes array and return it in HTML.
 function getRandomQuote() {
   selection = randomNumber(1, 12);
-  let message = `<h2>${quotes[selection].quote}</h2> 
-  <h3 class = "source">-${quotes[selection].source},</h3> <h4 class = "citation-year">${quotes[selection].citation}, ${quotes[selection].year}</h4>`;
+  let message = `<p class = "quote">${quotes[selection].quote}</p> 
+  <p class = "source">-${quotes[selection].source},</p> <p class = "citation-year">${quotes[selection].citation}, ${quotes[selection].year}</p>`;
   return message;
 }
 
 // Code to print to the page
-function printQuote() {
-
+function printQuote(p) {
+  document.getElementById('quote-box').innerHTML = p
 }
