@@ -1,21 +1,24 @@
-/* 
 
 .quote {
-
-
+  font-size: 2.5em;
 }
 .source {
+  font-size: 2em;
 
-
-} */
+}
 
 .citation-year {
   font-style: italic;
-
+  font-size: 1.5em;
 }
 
-/* #quote-box {
+#quote-box {
+  /* source: https://css-tricks.com/centering-css-complete-guide/ */
+  padding: 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-
-} */
 

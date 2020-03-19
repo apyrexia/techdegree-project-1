@@ -61,11 +61,11 @@ let quotes = [
     year: `circa 1881`
   },
   {
-    quote: `<p>Glance at the sun.</p>
-    <p>See the moon and the stars.</p>
-    <p>Gaze at the beauty of the earth's greenings.</p>
-    <p>Now,</p>
-    <p>Think.</p>`,
+    quote: `<p class = "quote">Glance at the sun.</p>
+    <p class = "quote">See the moon and the stars.</p>
+    <p class = "quote">Gaze at the beauty of the earth's greenings.</p>
+    <p class = "quote">Now,</p>
+    <p class = "quote">Think.</p>`,
     source: `Hildegard of Bingen`,
     citation: `tr. Gabriele Uhlein, Meditations with Hildegard of Bingen (1983)`,
     year: `circa 1179`

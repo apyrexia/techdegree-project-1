@@ -8,7 +8,6 @@ function randomNumber(min, max) {
 // Code to randomly select a quote from the quotes array and return it in HTML.
 function getRandomQuote() {
   selection = randomNumber(0, quotes.length - 1);
-  console.log(selection);
   let message = `<p class = "quote">${quotes[selection].quote}</p> 
   <p class = "source">-${quotes[selection].source}</p> 
   <p class = "citation-year">${quotes[selection].citation} ${quotes[selection].year}</p>`;
@@ -22,5 +21,5 @@ function printQuote(p) {
 
 // Code to select a random background color from the colors array. "document.body.style.background" source:https://www.w3resource.com/javascript-exercises/javascript-math-exercise-40.php
 function randomBackground() {
-document.body.style.background = colors[randomNumber(1, colors.length)];
+document.body.style.background = colors[randomNumber(1, colors.length - 1)];
 }
