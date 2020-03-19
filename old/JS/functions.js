@@ -31,6 +31,6 @@ function printQuote(p) {
 }
 
 // Code to select a random background color from the colors.js array. "document.body.style.background" source:https://www.w3resource.com/javascript-exercises/javascript-math-exercise-40.php
-function randomBackground() {
+function randomBackgroundColor() {
 document.body.style.background = colors[randomNumber(1, colors.length - 1)];
 }

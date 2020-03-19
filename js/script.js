@@ -1,4 +1,15 @@
-// An array of objects containing quotations
+/******************************************
+Treehouse FSJS Techdegree:
+project 1 - A Random Quote Generator
+******************************************/
+
+// For assistance: 
+  // Check the "Project Resources" section of the project instructions
+  // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
+
+/*** 
+ * `quotes` array 
+***/
 let quotes = [
   {
     quote: `To be whole is to be part; true voyage is return.`,
@@ -12,13 +23,6 @@ let quotes = [
     citation: `The Dispossessed by Ursula K. Le Guin`,
     year: `1974`
   },
-  // Removing for now, might be seen as controversial or negative.
-  // {
-  //   quote: `It is a disgrace to grow old through sheer carelessness before seeing what manner of man you may become by developing your bodily strength and beauty to their highest limit. But you cannot see that, if you are careless; for it will not come of its own accord.`,
-  //   source: `Socrates as quoted by Xenophon`,
-  //   citation: `Memorabilia`,
-  //   year: `circa 371 BC`
-  // },
   {
     quote: `Wonder is the feeling of a philosopher, and philosophy begins in wonder.`,
     source: `Socrates as quoted by Plato`,
@@ -62,19 +66,102 @@ let quotes = [
     year: `circa 1881`
   },
   {
-    quote: `<p class = "quote">Glance at the sun.</p>
-    <p class = "quote">See the moon and the stars.</p>
-    <p class = "quote">Gaze at the beauty of the earth's greenings.</p>
-    <p class = "quote">Now,</p>
-    <p class = "quote">Think.</p>`,
-    source: `Hildegard of Bingen`,
-    citation: `tr. Gabriele Uhlein, Meditations with Hildegard of Bingen (1983)`,
-    year: `circa 1179`
-  },
-  {
     quote: `There is certainly no absolute standard of beauty. That is precisely what makes its pursuit so interesting.`,
     source: `John Kenneth Galbraith`,
     citation: `quoted in New York Times Magazine`,
     year: `1960`
   }
 ];
+
+/***
+ * `colors` array
+***/ 
+
+let colors = [
+  'rgb(176,224,230)',
+  'rgb(175,238,238)',
+  'rgb(255,222,173)',
+  'rgb(143,188,143)',
+  'rgb(205,92,92)',
+];
+
+/***
+ * `randomNumber` function
+***/ 
+
+function randomNumber(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor( Math.random() * (max - min + 1) + min );
+}
+
+/***
+ * `getRandomQuote` function
+***/
+function getRandomQuote() {
+  selection = randomNumber(0, quotes.length - 1);
+  let randomQuote = quotes[selection];
+  return randomQuote;
+  
+  // let message = `<p class = "quote">${quotes[selection].quote}</p>`;
+  // if (quotes[selection].source) {
+  //   message += `<p class = "source">${quotes[selection].source}</p>`;
+  // } 
+  // if (quotes[selection].citation) {
+  //   message += `<p class = "citation">${quotes[selection].citation}</p>`;
+  // }
+  // if (quotes[selection].series) {
+  //   message += `<p class = "series">${quotes[selection].series}</p>`
+  // }
+  // if (quotes[selection].year) {
+  //   message += `<p class = "year">${quotes[selection].year}</p>`;
+  // }
+  
+  // return message;
+}
+
+/***
+ * `printQuote` function
+***/
+function printQuote() {
+  let quote = getRandomQuote();
+  message = `<p class="quote">${quote.quote}</p>
+  <p class="source">${quote.source}`
+  if (quote.citation) {
+    message += `, ${quote.citation}`
+  }
+  if (quote.series) {
+    message += `<br>${quote.series}`
+  }
+  if (quote.year) {
+    message += `, ${quote.year}`
+  }
+  message += `</p>`
+
+  document.getElementById('quote-box').innerHTML = message;
+}
+
+printQuote();
+
+/***
+ * `randomBackgroundColor` function
+***/
+function randomBackgroundColor() {
+  document.body.style.background = colors[randomNumber(1, colors.length - 1)];
+}
+
+randomBackgroundColor();
+
+/***
+ * click event listener for the print quote button
+ * DO NOT CHANGE THE CODE BELOW!!
+***/
+
+document.getElementById('load-quote').addEventListener("click", printQuote, false);
+
+
+/***
+ * code to change the background color and quote at 25 second intervals
+***/
+setInterval('printQuote()', 25000);
+setInterval('randomBackgroundColor()', 25000);
