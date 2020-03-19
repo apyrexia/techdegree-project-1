@@ -9,7 +9,8 @@ function randomNumber(min, max) {
 function getRandomQuote() {
   selection = randomNumber(1, 12);
   let message = `<h2>${quotes[selection].quote}</h2> 
-  <h4>-${quotes[selection].source}, ${quotes[selection].citation}, ${quotes[selection].year}</h4>`;
+  <h3 class = "source">-${quotes[selection].source},</h3> <h4 class = "citation-year">${quotes[selection].citation}, ${quotes[selection].year}</h4>`;
+  return message;
 }
 
 // Code to print to the page
